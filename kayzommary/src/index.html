@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="/dist/output.css">
+    <script src="https://kit.fontawesome.com/4d8fa8512b.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Lobster+Two:wght@400;700&family=M+PLUS+1:wght@400;500;600;700;800&family=Poppins:wght@100;300;500;600&family=Satisfy&display=swap" rel="stylesheet">
+</head>
+<body class="font-popin text-text">
+ <!-- navigation-menu at biger screen -->
+    <nav class="hidden  md:flex max-w-3xl mx-auto justify-between items-center capitalize  transition-all mt-6">
+        <a href="#" class="text-3xl font-semibold">kayzoMmari</a>
+        <ul class="flex justify-between gap-4">
+            <li><a href="#" class="hover:bg-skin1 px-2 rounded-sm hover:shadow-md">home</a></li>
+            <li><a href="#aboutMe" class="hover:bg-skin1 px-2 rounded-sm hover:shadow-md">about me</a></li>
+            <li><a href="#portfolio" class="hover:bg-skin1 px-2 rounded-sm hover:shadow-md">portfolio</a></li>
+            <li><a href="#contacts" class="hover:bg-skin1 px-2 rounded-sm hover:shadow-md">contacts</a></li>
+        </ul>
+    </nav>
+ <!-- navigation-menu at biger screen -->
+ <!-- navigation-menu at lower screen -->
+    <nav class="w-full h-10 bg-secondary shadow-inner text-text2 fixed z-20 bottom-0 left-0 text-3xl px-4 rounded-t-lg  flex justify-between items-center md:hidden">
+        <i class="transition fa fa-xmark  cursor-pointer  hover:text-text3" id="closeNav"></i>
+        <i class="transition fa fa-list  cursor-pointer hover:text-text3" id="openNav"></i>
+    </nav>
+ <!-- navigation-menu list-->
+    <div id="opened-nav-menu" class="fixed z-10 grid grid-cols-2 gap-2 text-2xl  text-text3 justify-between text-center p-4 min-w-full h-40 bg-secondary shadow-inner -bottom-32 left-0 rounded-t-lg transition-all md:hidden">
+        <a href="#home"><i class="transition fa fa-user cursor-pointer hover:text-text2 hover:shadow-xl listlink"></i></a>
+        <a href="/mycv/kay.pdf" download="/mycv/kay.pdf"><i class="transition fa fa-download cursor-pointer  hover:text-text2 hover:shadow-xl listlink"></i></a>
+        <a href="#contacts"><i class="transition fa fa-location-dot  cursor-pointer  hover:text-text2 hover:shadow-xl listlink"></i></a>
+        <a href="#portfolio">  <i class="transition fa fa-briefcase cursor-pointer  hover:text-text2 hover:shadow-xl listlink"></i></a>
+       <a href="#message">  <i class="transition fa fa-envelope cursor-pointer  hover:text-text2 hover:shadow-xl listlink"></i></a>    
+    </div>
+   <!-- navigation-menu list-->
+<!-- navigation-menu at lower screen end -->
+    <div class="max-w-screen-md mx-auto ">
+        <section class="w-full px-4 flex flex-col-reverse md:flex-row" id="home">
+            <div id="hero-section" class="mt-2 md:basis-1/2 max-w-md md:my-8">
+                 <h3 class="text-2xl my-2 text-text">HI THERE!</h3>
+                 <h1 class="text-3xl my-2 font-bold text-text">I'M KAYZO MMARI</h1>
+                 <h3 class="text-1.5xl my-2">WEB DEVELOPER AND APP DEVELOPER</h3>
+                 <P class="text-sm text-text2 my-2 font-light"> I am web and app developer with expertise in various programming languages and frameworks. 
+                    I creates innovative and user-friendly solutionss</P>
+                <button class="transition shadow-md py-2 px-4 w-full rounded-md mt-8 text-xl bg-skin1 font-light capitalize hover:-translate-y-1 hover:bg-skin2">
+                     <a href="#message">hire me now <i class="fa fa-down-long text-text2 ml-2"></i></a>
+                </button>
+            </div>
+            <div id="hero-image" class="max-w-md h-fit mb-8 md:basis-1/2 relative">
+                <div class="transition flex flex-col gap-4 absolute top-32 left-2 text-text text-2xl md:hidden">
+                    <a href="https://github.com/kayzo1903" class="hover:shadow-md px-2 "><i class="fa fa-twitter text-text3"></i></a>
+                   <a href="https://twitter.com/kayzo_mmary" class="hover:shadow-md px-2"> <i class="fa fa-github text-text3"></i></a>
+                   <a href="https://www.linkedin.com/in/kaykinanguka-mmari-b49284255/" class="hover:shadow-md px-2"><i class="fa fa-linkedin text-text3"></i></a> 
+                </div>
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                      <mask id="eggMask">
+                        <path d="M45.5,-31C54.6,-10.6,54.4,10.4,45.3,28.6C36.2,46.8,18.1,62.3,-0.4,62.5C-18.9,62.7,-37.9,47.8,-49.8,28C-61.6,8.2,-66.4,-16.5,-57,-37.2C-47.5,-57.8,-23.7,-74.5,-2.8,-72.9C18.2,-71.4,36.5,-51.5,45.5,-31Z" fill="#fff" transform="translate(100 100)" />
+                      </mask>
+                    </defs>
+                    <path fill="#0F62FE" d="M45.5,-31C54.6,-10.6,54.4,10.4,45.3,28.6C36.2,46.8,18.1,62.3,-0.4,62.5C-18.9,62.7,-37.9,47.8,-49.8,28C-61.6,8.2,-66.4,-16.5,-57,-37.2C-47.5,-57.8,-23.7,-74.5,-2.8,-72.9C18.2,-71.4,36.5,-51.5,45.5,-31Z" transform="translate(100 100)" />
+                    <image xlink:href="/image/kay_img.jpg" x="-8" y="27" width="200" height="160" mask="url(#eggMask)" />
+                </svg>                                                
+            </div>
+        </section>
+<!-- about me  -->
+         <section class="h-fit w-full px-4 my-8" id="aboutMe">
+              <div class="my-8 w-fit">
+                  <h3 class="text-text text-xl border-b-4 border-teal-300 capitalize">About me</h3>
+              </div>
+              <div class="w-full flex justify-between items-center">
+                <div class="hidden md:block w-72 rounded-tr-3xl rounded-bl-3xl overflow-hidden">
+                    <img src="/image/kay_img.jpg" alt="">
+                </div>
+                <div class=" text-text2 text-sm md:text-lg md:basis-1/2">
+                    <p class="py-2"> I am a skilled web designer 
+                     with expertise in JavaScript, Tailwind, React, HTML, and CSS.
+                     I can create dynamic, visually appealing websites
+                      that are user-friendly and tailored to client's needs. </p>
+                     <p class="py-2"> I also have experience in color theory, typography, 
+                         and layout design principles. 
+                         I am well-suited for web projects requiring a designer with a 
+                         diverse set of technical and creative skills.             
+                     </p>
+                     <button class="w-full transition bg-skin1 my-2 py-2 px-4 rounded-md text-lg shadow-md hover:-translate-y-1 hover:bg-skin2">
+                        <a href="/mycv/kay.pdf" download="/mycv/kay.pdf"> download cv <i class="fa fa-download ml-2"></i></a> </i>
+                    </button>
+                 </div>
+              </div> 
+         </section>
+<!-- about me  end-->
+<!-- skills and education -->
+         <section class="w-full h-fit px-4 my-8" id="skills">
+            <div class="my-8 w-fit">
+                <h3 class="text-text text-xl border-b-4 border-teal-300 capitalize">skills & service</h3>
+            </div>
+            <div class="my-4 w-full md:flex justify-between gap-8">
+                <div class="w-full">
+                    <div class="text-text3">
+                        <h3>html & css</h3>
+                        <div class="progress w-full h-2 my-2 bg-skin1 overflow-hidden rounded-md">
+                            <div class="h-2 w-4/5 bg-red-400">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-text3">
+                        <h3>javascript</h3>
+                        <div class="progress w-full h-2 my-2 bg-skin1 overflow-hidden rounded-md">
+                            <div class="h-2 w-4/5 bg-red-400">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-text3">
+                        <h3>Tailwindcss</h3>
+                        <div class="progress w-full h-2 my-2 bg-skin1 overflow-hidden rounded-md">
+                            <div class="h-2 w-4/5 bg-red-400">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-text3">
+                        <h3>React</h3>
+                        <div class="progress w-full h-2 my-2 bg-skin1 overflow-hidden rounded-md">
+                            <div class="h-2 w-4/5 bg-red-400">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="service text-text2 my-8 w-full flex flex-wrap gap-4">
+                  <div class="transition bg-gradient-to-t to-skin1 from-skin2 w-40 h-40 bg-primary flex justify-center items-center rounded-md shadow-md hover:scale-105">
+                     <h3 class="text-xl">UI & UX</h3>
+                  </div> 
+                  <div class="transition bg-gradient-to-t to-skin1 from-skin2 w-40 h-40 bg-primary flex justify-center items-center rounded-md shadow-md hover:scale-105">
+                    <h3 class="text-xl px-2">frontend developer</h3>
+                  </div> 
+                  <div class="transition bg-gradient-to-t to-skin1 from-skin2 w-40 h-40 bg-primary flex justify-center items-center rounded-md shadow-md hover:scale-105">
+                    <h3 class="text-xl px-2">App development</h3>
+                 </div> 
+                </div>
+            </div>
+         </section>
+<!-- skills and education -->
+<!-- portfolio section -->
+<section class="w-full h-fit px-4 my-8" id="portfolio">
+    <div class="my-8 w-fit">
+        <h3 class="text-text text-xl border-b-4 border-teal-300 capitalize">portfolio</h3>
+    </div>
+    <div class="gallery flex flex-wrap gap-4 justify-evenly">
+        <div class="transition w-full shadow-lg hover:-translate-y-1 md:w-80 ">
+            <a href="https://kkoo.netlify.app/" target="_blank" rel="noopener noreferrer"><img src="/image/kkoo thumbnail.jpg" alt=""></a>
+        </div>
+    </div>
+ </section>
+<!-- portfolio section end-->
+<!-- contacts -->
+  <section class="contacts w-full h-fit px-4 my-8" id="contacts">
+    <div class="my-8 w-fit">
+        <h3 class="text-text text-xl border-b-4 border-teal-300 capitalize">contacts</h3>
+    </div>
+    <div class="main flex flex-col w-full gap-8 mt-4 md:flex-row">
+        <div class="w-full  md:w-43%">
+             <h3 class="text-xl text-text2 text-center">info</h3>
+              <div class="w-full flex flex-col gap-8 items-center mt-2">
+                 <div class="transition bg-gradient-to-t to-skin1 from-skin2 w-full h-36 shadow-lg flex flex-col justify-center items-center gap-2 hover:scale-105">
+                      <i class="fa fa-location-dot text-3xl"></i>
+                     <p>Dar-es-salaam,Tanzania</p>
+                 </div>
+                  <div class="transition bg-gradient-to-t to-skin1 from-skin2 w-full h-36 shadow-lg flex flex-col justify-center items-center gap-2 hover:scale-105">
+                      <i class="fa fa-phone text-3xl"></i>
+                     <p>  +255 653 274 741</p>
+                 </div>
+                 <div class="transition bg-gradient-to-t to-skin1 from-skin2 w-full h-36 shadow-lg flex flex-col justify-center items-center gap-2 hover:scale-105">
+                     <i class="fa fa-envelope text-3xl"></i>
+                      <p>kaykinangukammari@gmail.com</p>
+                   </div>
+              </div>
+        </div>
+        <div class="w-full md:w-43%" id="message">
+             <h3 class="text-xl text-text2 text-center">sent message</h3>
+             <form action="#" class="mt-2 flex flex-col gap-4 h-fit " >
+                <div class="email-name w-full flex flex-col gap-2 md:flex-row">
+                    <input type="text" name="customerName" id="customerName" placeholder="name" class="bg-primary py-2 px-4 w-full rounded-md focus:outline-none md:w-1/2" required>
+                    <input type="email" name="customerEmail" id="customerEmail" placeholder="your@email.com" class="bg-primary py-2 px-4 w-full rounded-md focus:outline-none md:w-1/2" required>
+                </div>
+                <div class="message">
+                    <textarea type="text" name="customerSubject" id="custumerMessage" placeholder="message" class="bg-primary py-2 px-4 w-full h-40 rounded-md text-left focus:outline-none md:w-full" required></textarea>
+                </div>
+                <button type="submit" class="transition shadow-md py-2 px-4 w-full rounded-md mt-2 text-xl bg-skin1 font-light hover:-translate-y-1 hover:bg-skin2">
+                    sent <i class="fa fa-paper-plane ml-2"></i>
+               </button>
+             </form>
+        </div>
+    </div>
+  </section> 
+<!-- contacts end -->
+    </div>
+<!-- footer -->
+       <footer class="w-full h-36 bg-footer bg-center bg-cover" >
+            <div class="max-w-screen-md flex flex-col justify-center items-center pt-9 gap-2 mx-auto">
+                <div id="social-media" class="text-text w-28 flex gap-4">
+                    <a href="https://twitter.com/kayzo_mmary" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter"></i></a>
+                     <a href="#https://www.linkedin.com/in/kaykinanguka-mmari-b49284255/" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin"></i></a>
+                     <a href="https://github.com/kayzo1903" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i></a>
+                </div>
+                <div id="copryright" class="text-sm">
+                     <p>&#169 <span id="year">2023</span> kayzo mmary,All right reserved</p>
+                </div>
+            </div>
+       </footer>
+<!-- footer end-->
+    <script src="/src/port.js"></script>
+</body>
+</html>
